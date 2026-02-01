@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 😜</title>
+
+    <style>
+        body{
+            background-color: rgb(172, 120, 160);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            /* background:linear-gradient(rgb(223, 119, 236) rgb(190, 149, 187)); */
+            font-family:Arial;
+        }
+
+        .box{
+            background:rgb(17, 17, 17);
+            color: white;
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            width:320px;
+        }
+
+        h2{
+            margin-bottom:25px;
+        }
+
+        button{
+            padding:10px 25px;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
+            margin:10px;
+        }
+
+        #yes{
+            background:#b4c47b;
+            color:white;
+        }
+
+        #no{
+            background:#7babb8;
+            color:white;
+            position:relative;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Do you love mee 😎</h2>
+    <h4>If you love me </h4>
+    <h4>Click YES | or NO</h4>
+
+    <button id="yes" onclick="yesClick()">YES</button>
+    <button id="no">NO</button>
+</div>
+
+<script>
+
+function yesClick(){
+    alert("Haha 😁 I knew it machaa ❤️");
+}
+
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", function(){
+
+    let x = Math.random() * 250 - 120;
+    let y = Math.random() * 200 - 100;
+
+    noBtn.style.transform =
+        `translate(${x}px, ${y}px)`;
+});
+
+</script>
+
+</body>
+</html>
